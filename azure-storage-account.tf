@@ -1,7 +1,7 @@
 resource "random_string" "myrandom" {
   length = 16 
   upper = false 
-  lower = false 
+  special = false 
 }
 resource "azurerm_storage_account" "example" {
   name                     = "st${random_string.myrandom.id}"
