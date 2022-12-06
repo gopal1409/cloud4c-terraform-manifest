@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 
-resource "azurerm_resource_group" "myrg2"{
+resource "azurerm_resource_group" "myrg2" {
   name     = "myrg-2"
   location = "West Us"
   provider = azurerm.prod-westus
