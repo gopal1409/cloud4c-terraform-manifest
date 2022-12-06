@@ -4,8 +4,13 @@ terraform {
     azurerm = {
       #terraform init. it will download the exe file terraform api required to communicate with the cloud service provider
       source  = "hashicorp/azurerm"
-      version = "1.44.0"
+      version = ">=3.0.0"
+
       #this is the latest version of terraform provider block
+    }
+    random = {
+        source = "hashicorp/random"
+        version = ">=3.0"
     }
   }
 }
